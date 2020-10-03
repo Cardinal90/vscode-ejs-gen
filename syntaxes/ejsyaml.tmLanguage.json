@@ -1,0 +1,24 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"scopeName": "text.ejsyaml",
+	"patterns": [
+		{
+			"begin": "---",
+			"end": "(?=a)b",
+			"patterns": [
+				{
+					"include": "text.html.ejs"
+				}
+			]
+		},
+		{
+			"begin": "(?!---)",
+			"end": "(?=---)",
+			"patterns": [
+				{
+					"include": "source.yaml"
+				}
+			]
+		}
+	]
+}

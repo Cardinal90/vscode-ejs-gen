@@ -34,6 +34,21 @@
 				"command": "ejs-gen.generate",
 				"title": "ejs-gen: generate current file"
 			}
+		],
+		"languages": [
+			{
+				"id": "ejsyaml",
+				"extensions": [
+					".ejsyaml"
+				]
+			}
+		],
+		"grammars": [
+			{
+				"language": "ejsyaml",
+				"scopeName": "text.ejsyaml",
+				"path": "./syntaxes/ejsyaml.tmLanguage.json"
+			}
 		]
 	},
 	"scripts": {
